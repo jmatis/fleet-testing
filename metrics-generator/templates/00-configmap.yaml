@@ -16,7 +16,7 @@ data:
     ?>
   mainindex: |-
     <?php
-      echo "Main index page<br/>\n"
-      echo "Hit <a href='/phpinfo.php'>phpinfo</a><br/>\n"
-      echo "or <a href='/metrics/'>metrics</a>\n"
+      echo "Main index page<br/>\n";
+      echo "Hit <a href='/phpinfo.php'>phpinfo</a><br/>\n";
+      echo "or <a href='/metrics/'>metrics</a>\n";
     ?>
