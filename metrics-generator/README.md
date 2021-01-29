@@ -15,7 +15,7 @@ metadata:
 type: fleet.cattle.io.gitrepo
 spec:
   repo: https://github.com/jmatis/fleet-testing.git
-  branch: master
+  branch: main
   paths:
   - /metrics-generator
   targets:
