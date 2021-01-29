@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: php-nginx-phpcode
+  namespace: {{ .Values.namespace }}
+data:
+  phpinfo: |-
+    <?php
+      phpinfo();
+    ?>
+  phpmetrics: |-
+    <?php
+      echo "#hostname: " . gethostname() . "\n";
+      echo "this_is_random " . rand(5, 15) . "\n";
+    ?>
+  mainindex: |-
+    <?php
+      echo "Main index page<br/>\n"
+      echo "Hit <a href='/phpinfo.php'>phpinfo</a><br/>\n"
+      echo "or <a href='/metrics/'>metrics</a>\n"
+    ?>
