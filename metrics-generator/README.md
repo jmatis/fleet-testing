@@ -1,4 +1,8 @@
 ```
+# kubectl config use-context ktest1
+
+# kubectl create namespace default2
+
 # kubectl config use-context local
 
 # kubectl apply -f metrics-generator.yaml
