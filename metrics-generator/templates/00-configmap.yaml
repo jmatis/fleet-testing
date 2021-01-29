@@ -12,6 +12,7 @@ data:
     <?php
       echo "#hostname: " . gethostname() . "\n";
       echo "this_is_random " . rand(5, 15) . "\n";
+      echo "this_is_another_random " . rand(5, 15) . "\n";
     ?>
   mainindex: |-
     <?php
