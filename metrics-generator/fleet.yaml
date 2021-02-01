@@ -5,7 +5,7 @@ diff:
   - apiVersion: apps/v1
     kind: Deployment
     name: php-nginx-deployment
-    namespace: default2
+    namespace: {{ .Values.namespace }}
     operations:
     - {"op": "remove", "path": "/spec/strategy" }
 
