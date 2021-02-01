@@ -11,8 +11,8 @@ spec:
       app: php-nginx
   replicas: 3
   strategy:
-    type: Recreate
-    #type: RollingUpdate
+    #type: Recreate
+    type: RollingUpdate
   template:
     metadata:
       labels:
